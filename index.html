@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nikolas Lopez</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>Hi, I'm Nikolas Lopez</h1>
-    <p>I'm a senior studying Computer Science at the University of Minnesota, with interests in machine learning, artificial intelligence, and full-stack development.</p>
-    
-    <h2>About Me</h2>
-    <p>I enjoy building systems that connect smart algorithms with seamless interfaces. My recent work includes recommender systems, social computing studies, and dynamic web apps. I'm constantly exploring new tools and frameworks to push my knowledge further.</p>
+  <header>
+    <div class="hero">
+      <img src="images/profile.jpg" alt="Nikolas Lopez" class="profile-pic">
+      <h1>Hi, I'm Nikolas Lopez</h1>
+      <p>Senior CS student at the University of Minnesota</p>
+      <p>Focused on Machine Learning, Artificial Intelligence, and Full-Stack Development</p>
+    </div>
+  </header>
 
-    <h2>Links</h2>
+  <nav>
     <ul>
-      <li><a href="https://github.com/NikLopezGoes">GitHub</a></li>
-      <li><a href="mailto:lope0355@umn.edu">Email</a></li>
-      <li><a href="https://www.linkedin.com/in/nikolas-lopez">LinkedIn</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </div>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I enjoy building intelligent, user-focused systems that combine powerful algorithms with clean, modern design. Whether it's developing recommendation systems or building full-stack applications, I focus on creating solutions that are both useful and elegant.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project">
+        <h3>RECON Replication</h3>
+        <p>Replicating a reciprocal recommender system in dating and employment contexts.</p>
+      </div>
+      <div class="project">
+        <h3>uBartr</h3>
+        <p>A React and Firebase-based clothing exchange app for university students.</p>
+      </div>
+      <div class="project">
+        <h3>Shilling Attack Analysis</h3>
+        <p>Adversarial experiments against collaborative filtering systems using MovieLens and Anime datasets.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:lope0355@umn.edu">lope0355@umn.edu</a></p>
+      <p>GitHub: <a href="https://github.com/NikLopezGoes" target="_blank">NikLopezGoes</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/nikolas-lopez" target="_blank">nikolas-lopez</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nikolas Lopez. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
