@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nikolas Lopez</title>
+  <title>Nikolas Lopez - Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
@@ -11,47 +11,75 @@
   <header>
     <div class="hero">
       <img src="images/profile.jpg" alt="Nikolas Lopez" class="profile-pic">
-      <h1>Hi, I'm Nikolas Lopez</h1>
-      <p>Senior CS student at the University of Minnesota</p>
-      <p>Focused on Machine Learning, Artificial Intelligence, and Full-Stack Development</p>
+      <h1>Nikolas Lopez</h1>
+      <p>Minneapolis, MN | (507) 399-6708 | <a href="mailto:niklopez4102@gmail.com">niklopez4102@gmail.com</a></p>
     </div>
   </header>
 
   <nav>
     <ul>
-      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I enjoy building intelligent, user-focused systems that combine powerful algorithms with clean, modern design. Whether it's developing recommendation systems or building full-stack applications, I focus on creating solutions that are both useful and elegant.</p>
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>University of Minnesota – Twin Cities</strong><br>
+      Bachelor of Science in Computer Science, Expected May 2025<br>
+      GPA: 3.54</p>
+      <p><strong>Relevant Courses:</strong> Algorithms and Data Structures, Advanced Programming Principles, Introduction to Databases, Computer Architecture, Computer Graphics, Software Design Principles, Artificial Intelligence, Internet Programming, UI Design, Recommender Systems</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p><strong>Languages & Tools:</strong> C++, Python, C, Java, JavaScript, HTML, CSS, ExpressJS, React, SQL</p>
+    </section>
+
+    <section id="experience">
+      <h2>Industry Experience</h2>
+      <h3>Enterprise Computing Solutions Intern – Unisys, Eagan, MN (June 2023 - August 2023)</h3>
+      <ul>
+        <li>Encrypted sensitive files for customers to ensure data confidentiality and compliance.</li>
+        <li>Researched new operating systems and resolved complex technical issues.</li>
+        <li>Participated in Agile processes including stand-ups, sprint planning, and retrospectives.</li>
+      </ul>
+      <h4>Cipher File Utility (C)</h4>
+      <ul>
+        <li>Designed and implemented encryption/decryption features on OS2200.</li>
+        <li>Supported user interaction with encryption metadata and file search.</li>
+      </ul>
+
+      <h3>CSE-IT Student Worker – University of Minnesota (August 2024 - Present)</h3>
+      <ul>
+        <li>Resolved 10+ weekly IT support tickets related to software and SSH issues.</li>
+        <li>Installed software and checked system compatibility across machines.</li>
+        <li>Assessed and fixed hardware performance problems to maintain system efficiency.</li>
+      </ul>
     </section>
 
     <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="project">
-        <h3>RECON Replication</h3>
-        <p>Replicating a reciprocal recommender system in dating and employment contexts.</p>
-      </div>
-      <div class="project">
-        <h3>uBartr</h3>
-        <p>A React and Firebase-based clothing exchange app for university students.</p>
-      </div>
-      <div class="project">
-        <h3>Shilling Attack Analysis</h3>
-        <p>Adversarial experiments against collaborative filtering systems using MovieLens and Anime datasets.</p>
-      </div>
-    </section>
+      <h2>Project Experience</h2>
+      <h3>Drone Simulation System (C++)</h3>
+      <ul>
+        <li>Simulated drone deliveries with recharge stations and time-based constraints.</li>
+        <li>Used SOLID principles for modular and maintainable architecture.</li>
+      </ul>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:lope0355@umn.edu">lope0355@umn.edu</a></p>
-      <p>GitHub: <a href="https://github.com/NikLopezGoes" target="_blank">NikLopezGoes</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/nikolas-lopez" target="_blank">nikolas-lopez</a></p>
+      <h3>2048 AI Player (Python)</h3>
+      <ul>
+        <li>Implemented 3 AI algorithms to solve 2048 and benchmarked them against literature.</li>
+        <li>Analyzed results to evaluate performance based on score and efficiency.</li>
+      </ul>
+
+      <h3>Auction Website (HTML, ExpressJS, CSS)</h3>
+      <ul>
+        <li>Created ExpressJS backend for authentication, item listings, and bid submissions.</li>
+        <li>Built a responsive front-end for user interactions like bidding and history tracking.</li>
+      </ul>
     </section>
   </main>
 
@@ -60,7 +88,6 @@
   </footer>
 
   <script>
-    // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
