@@ -30,5 +30,4 @@ It reflects my commitment to writing clean, modern, and responsive code.
 
 ---
 
-## 📁 Structure
 
