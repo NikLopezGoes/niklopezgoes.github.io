@@ -3,92 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nikolas Lopez - Website</title>
+  <title>Nikolas Lopez | Software Engineer</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="icon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="hero">
-      <!-- <img src="images/profile.jpg" alt="Nikolas Lopez" class="profile-pic"> -->
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">NL.</a>
+      <ul class="nav-links">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
       <h1>Nikolas Lopez</h1>
-      <p>Minneapolis, MN | (507) 399-6708 | <a href="mailto:niklopez4102@gmail.com">niklopez4102@gmail.com</a></p>
+      <p class="subtitle">Software Engineer & Full Stack Developer</p>
+      
+      <div class="contact-info">
+        <a href="mailto:niklopez4102@gmail.com"><i class="fas fa-envelope"></i> niklopez4102@gmail.com</a>
+        <a href="tel:5073996708"><i class="fas fa-phone"></i> (507) 399-6708</a>
+        <a href="https://linkedin.com/in/nikolaslopez" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/NikLopezGoes" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      
+      <p class="location"><i class="fas fa-map-marker-alt"></i> Minneapolis, MN</p>
     </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="education">
-      <h2>Education</h2>
-      <p><strong>University of Minnesota – Twin Cities</strong><br>
-      Bachelor of Science in Computer Science, Expected May 2025<br>
-      GPA: 3.54</p>
-      <p><strong>Relevant Courses:</strong> Algorithms and Data Structures, Advanced Programming Principles, Introduction to Databases, Computer Architecture, Computer Graphics, Software Design Principles, Artificial Intelligence, Internet Programming, UI Design, Recommender Systems</p>
+  <main class="container">
+    
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>University of Minnesota</h3>
+            <p class="degree">Bachelor of Science in Computer Science (GPA: 3.6)</p>
+          </div>
+          <span class="date">Sept 2021 – May 2025</span>
+        </div>
+        <ul class="details-list">
+          <li><strong>President:</strong> Information Technology Student Group</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <p><strong>Languages & Tools:</strong> C++, Python, C, Java, JavaScript, HTML, CSS, ExpressJS, React, SQL</p>
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Web Developer</h3>
+            <span class="company">Kris’ Tacos</span>
+          </div>
+          <span class="date">May 2024 – Present</span>
+        </div>
+        <ul class="details-list">
+          <li>Built a full-stack React application for a local food truck business, delivering a responsive production website used by customers daily.</li>
+          <li>Implemented core features including dynamic menu rendering, a customer contact workflow, and an automated location calendar to support real-time updates.</li>
+          <li>Developed backend scheduling services with API integration for 10+ weekly stops, reducing manual updates and improving accuracy.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Developer Intern</h3>
+            <span class="company">Nagios Enterprises</span>
+          </div>
+          <span class="date">Aug 2025 – Nov 2025</span>
+        </div>
+        <ul class="details-list">
+          <li>Developed configuration wizards, dashlets, and plugins within a 1000+ file codebase, enhancing monitoring capabilities across Nagios XI and Network Analyzer.</li>
+          <li>Implemented full-stack UI improvements including persistent theming and state management, improving usability and visual consistency across 10+ interfaces.</li>
+          <li>Authored 10+ user guides and tutorial videos to improve clarity of product setup and reduce client onboarding time.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Information Technology Student Technician</h3>
+            <span class="company">University of Minnesota</span>
+          </div>
+          <span class="date">Aug 2024 – Jul 2025</span>
+        </div>
+        <ul class="details-list">
+          <li>Assisted hundreds of students with complex hardware, software, and account issues across multiple operating systems.</li>
+          <li>Resolved high-volume tickets in TeamDynamix with accurate documentation and customer-focused service.</li>
+          <li>Managed an inventory of 200+ devices and used scripting/Linux tools to improve imaging, configuration, and auditing workflows.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h3>Software Engineer Intern</h3>
+            <span class="company">Unisys</span>
+          </div>
+          <span class="date">Jun 2023 – Aug 2023</span>
+        </div>
+        <ul class="details-list">
+          <li>Built and deployed a C-based Cipher File Utility (CFU) for OS2200 mainframes, automating encryption and decryption across enterprise data pipelines.</li>
+          <li>Collaborated in Agile sprints to integrate the utility into core Unisys production workflows.</li>
+          <li>Performed debugging and optimization to ensure performance, reliability, and maintainability.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="experience">
-      <h2>Industry Experience</h2>
-      <h3>Enterprise Computing Solutions Intern – Unisys, Eagan, MN (June 2023 - August 2023)</h3>
-      <ul>
-        <li>Encrypted sensitive files for customers to ensure data confidentiality and compliance.</li>
-        <li>Researched new operating systems and resolved complex technical issues.</li>
-        <li>Participated in Agile processes including stand-ups, sprint planning, and retrospectives.</li>
-      </ul>
-      <h4>Cipher File Utility (C)</h4>
-      <ul>
-        <li>Designed and implemented encryption/decryption features on OS2200.</li>
-        <li>Supported user interaction with encryption metadata and file search.</li>
-      </ul>
-
-      <h3>CSE-IT Student Worker – University of Minnesota (August 2024 - Present)</h3>
-      <ul>
-        <li>Resolved 10+ weekly IT support tickets related to software and SSH issues.</li>
-        <li>Installed software and checked system compatibility across machines.</li>
-        <li>Assessed and fixed hardware performance problems to maintain system efficiency.</li>
-      </ul>
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="card">
+        <div class="card-header">
+          <h3>Schedule Builder</h3>
+          <span class="tech-stack-inline">MongoDB, Express.js, React, Node.js, Git, Agile</span>
+        </div>
+        <ul class="details-list">
+          <li>Built a full-stack application for managing employee work shifts with automated schedule generation.</li>
+          <li>Designed and implemented RESTful APIs for scheduling logic, ensuring conflict-free assignments.</li>
+          <li>Integrated MongoDB to store availability, assignments, and admin overrides with reliability.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Project Experience</h2>
-      <h3>Drone Simulation System (C++)</h3>
-      <ul>
-        <li>Simulated drone deliveries with recharge stations and time-based constraints.</li>
-        <li>Used SOLID principles for modular and maintainable architecture.</li>
-      </ul>
+    <section id="skills" class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="tags">
+            <span>Java</span><span>Python</span><span>C</span><span>C++</span><span>C#</span><span>SQL</span><span>JavaScript</span><span>TypeScript</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
 
-      <h3>2048 AI Player (Python)</h3>
-      <ul>
-        <li>Implemented 3 AI algorithms to solve 2048 and benchmarked them against literature.</li>
-        <li>Analyzed results to evaluate performance based on score and efficiency.</li>
-      </ul>
+        <div class="skill-category">
+          <h3>Frameworks & Libraries</h3>
+          <div class="tags">
+            <span>React</span><span>Node.js</span><span>Express.js</span><span>Flask</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>PyTorch</span>
+          </div>
+        </div>
 
-      <h3>Auction Website (HTML, ExpressJS, CSS)</h3>
-      <ul>
-        <li>Created ExpressJS backend for authentication, item listings, and bid submissions.</li>
-        <li>Built a responsive front-end for user interactions like bidding and history tracking.</li>
-      </ul>
+        <div class="skill-category">
+          <h3>Tools & Platforms</h3>
+          <div class="tags">
+            <span>AWS</span><span>Linux</span><span>Git</span><span>Docker</span><span>GCP</span><span>MongoDB</span><span>Cursor</span><span>Copilot</span>
+          </div>
+        </div>
+      </div>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 Nikolas Lopez. All rights reserved.</p>
+    <p>&copy; 2026 Nikolas Lopez. All rights reserved.</p>
   </footer>
 
   <script>
+    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
